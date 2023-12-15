@@ -577,6 +577,7 @@ td>ul>li {
 
 #contact-container {
     max-width: 1200px;
+    margin: auto;
     padding: 100px;
     display: flex;
     flex-direction: column;
