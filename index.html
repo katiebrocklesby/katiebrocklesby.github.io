@@ -23,8 +23,7 @@
                 <div class="dropdown">
                     <div class="nav-item">Portfolio</div>
                     <div class="dropdown-content">
-                        <div class="nav-item drop-item">Reflection</div>
-                        <div class="nav-item drop-item">Application Materials</div>
+                        <div class="nav-item drop-item" onclick="goToReflection()">Reflection</div>
                         <div class="nav-item drop-item" onclick="goToPDP()">Professional Development Plan</div>
                         <div class="nav-item drop-item" onclick="goToSA()">SA Philosophy</div>
                     </div>
@@ -78,8 +77,7 @@
                     far. ✨</div>
                 <div>Please explore my work 👇</div>
                 <div id="hero-btns">
-                    <div class="hero-btn">Reflection</div>
-                    <div class="hero-btn">Application Materials</div>
+                    <div class="hero-btn" onclick="goToReflection()">Reflection</div>
                     <div class="hero-btn" onclick="goToPDP()">Professional Development Plan</div>
                     <div class="hero-btn" onclick="goToSA()">SA Philosophy</div>
                 </div>
@@ -101,6 +99,10 @@
 <script>
     function goHome() {
         window.location.href = "index.html";
+    }
+
+    function goToReflection() {
+        window.location.href = "reflection.html";
     }
 
     function goToPDP() {

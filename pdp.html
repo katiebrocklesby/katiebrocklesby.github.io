@@ -23,10 +23,9 @@
                 <div class="dropdown">
                     <div class="nav-item">Portfolio</div>
                     <div class="dropdown-content">
-                        <div class="nav-item drop-item">Reflection</div>
-                        <div class="nav-item drop-item">Application Materials</div>
+                        <div class="nav-item drop-item" onclick="goToReflection()">Reflection</div>
                         <div class="nav-item drop-item" onclick="goToPDP()">Professional Development Plan</div>
-                        <div class="nav-item drop-item">SA Philosophy</div>
+                        <div class="nav-item drop-item" onclick="goToSA()">SA Philosophy</div>
                     </div>
                 </div>
                 <div class="nav-item">Contact</div>
@@ -281,8 +280,16 @@
         window.location.href = "index.html";
     }
 
+    function goToReflection() {
+        window.location.href = "reflection.html";
+    }
+
     function goToPDP() {
-        window.open('pdp.html');
+        window.location.href = "pdp.html";
+    }
+
+    function goToSA() {
+        window.location.href = "sa.html";
     }
 </script>
 

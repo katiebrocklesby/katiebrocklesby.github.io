@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katie Brocklesby | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <nav id="header-items">
+            <img src="./images/logo.png" alt="" class="logo" onclick="goHome()">
+            <nav id="nav-items">
+                <div class="nav-item" onclick="goHome()">Home</div>
+                <div class="dropdown">
+                    <div class="nav-item">Portfolio</div>
+                    <div class="dropdown-content">
+                        <div class="nav-item drop-item" onclick="goToReflection()">Reflection</div>
+                        <div class="nav-item drop-item" onclick="goToPDP()">Professional Development Plan</div>
+                        <div class="nav-item drop-item" onclick="goToSA()">SA Philosophy</div>
+                    </div>
+                </div>
+                <div class="nav-item">Contact</div>
+            </nav>
+            <div id="header-btns">
+                <a href="./files/coverLetter.pdf" target="_blank">
+                    <div class="header-btn" onclick="openCoverLetter()">Cover Letter</div>
+                </a>
+                <a href="./files/Resume.pdf" target="_blank">
+                    <div class="header-btn">Resume</div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div id="header-mobile">
+        <div id="header-mobile-container">
+            <div class="mobile-nav" onclick="goHome()">Home</div>
+            <div class="mobile-nav">Portfolio</div>
+            <div class="mobile-nav">Contact</div>
+        </div>
+    </div>
+    <div id="header-btns-mobile">
+        <a href="./files/coverLetter.pdf" target="_blank">
+            <div class="header-btn">Cover Letter</div>
+        </a>
+        <a href="./files/Resume.pdf" target="_blank">
+            <div class="header-btn">Resume</div>
+        </a>
+    </div>
+    <section id="reflection">
+        <div id="reflection-container">
+            <div id="reflection-title">Reflection</div>
+            <div id="reflection-paragraph">Throughout my time exploring elements of professional development in the
+                student affairs field via the guided readings and assignments, I have been able to commit time to
+                reflecting upon my own ideas around professional development and where I am in my HESA career.</div>
+            <div id="reflection-paragraph">First of all, the experience of taking this Reflective Practice class as an
+                entirely online, asynchronous course dedicated to professional development in the student affairs
+                profession was a tremendous one in developing my skills as a scholar and practicioner. As a HESA
+                scholar-practitioner, there are going to be times in which I will need to take initiatives on a project
+                that made lead to a substantial amount of solo-work. I feel like the structure of this course has
+                allowed me to further develop my skills in time management and given me additional confidence to dive
+                into research and projects with limited supervision. Learning to trust myself to learn what I need to
+                learn and accomplish what I need to accomplish was a valuable outcome of the way this course was
+                structured.</div>
+            <div id="reflection-paragraph">Another outcome of this Reflective Practice course is how much I have come to
+                appreciate and value the personal and professional growth and well-being of HESA staff members. From my
+                practice as a student affairs professional to my exploration of theory and research, I have come to
+                understand in a new way how essential it is for the success of a campus to lay a foundation of support
+                and care for faculty members. Knowing what I know now, I am better equipped to advocate for policies and
+                initiatives that benefit staff members, as well as to take the issue into my own hands and create events
+                and programs through my role to support fellow staff members.</div>
+            <div id="reflection-paragraph">The most prominent challenge that I faced whilst completing this Reflective
+                Practice course was not having access to a structured environment with other students to have
+                discussions over course readings or general professional development topics. In other courses I have
+                really benefited from getting the chance to hear from my fellow students in the Higher Education program
+                and to have a structured way of discussing topics related to the class with one another and the faculty
+                member. Despite this challenge, I was able to utilize this solo-exploration opportunity to develop my
+                time management skills and build the confidence to explore different topics independently, which I think
+                will only serve to help me going forward in my HESA career, especially as I take on larger projects and
+                conference presentations.</div>
+            <div id="reflection-paragraph">In conclusion, I have truly valued this opportunity to dive deeper into and
+                reflect upon issues surrounding professional development in the HESA field. Going forward, I plan on
+                using the information I have gathered to inform my practice in several ways, including serving on the
+                Student Affairs Professional Development Committee, providing supportive programing for HESA
+                professionals at my institution, and advocating for larger level policy changes that not only benefit me
+                as a staff member, but staff members institution wide.</div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div id="footer-items">
+            <a href="mailto:brocklesby.katie@gmail.com" target="_blank""><img src=" ./images/mail.png" alt=""
+                class="footer-icon" id="mail"></a>
+            <a href="https://www.linkedin.com/in/katie-brocklesby-a02893146/" target="_blank"><img
+                    src="./images/linkedin.webp" alt="" class="footer-icon" id="mail"></a>
+            <a href="Tel:479-575-4365" id="phone">(479)-575-4365</a>
+        </div>
+        <div id="copy">&copy; Katie Brocklesby 2023. All rights reserved.</div>
+    </footer>
+</body>
+
+<script>
+    function goHome() {
+        window.location.href = "index.html";
+    }
+
+    function goToReflection() {
+        window.location.href = "reflection.html";
+    }
+
+    function goToPDP() {
+        window.location.href = 'pdp.html';
+    }
+
+    function goToSA() {
+        window.location.href = 'sa.html';
+    }
+</script>
+
+</html>
